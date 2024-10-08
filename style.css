@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #e3f2fd;
+    font-family: Josefin Sans, system-ui;
+    font-size: 18px;
+}
+
+.container{
+    width: 380px;
+    margin:150px auto;
+    cursor: pointer;
+}
+
+.selectText{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+.opctions .opction{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    margin-block-start: 10px;
+    cursor: pointer;
+}
+
+.opctions{
+    display: none;
+}
+
+.active .opctions{
+    display: block;
+}

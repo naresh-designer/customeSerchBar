@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Custome Search Bar</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="selectText">Select Text</div>
+
+        <div class="opctions">
+            <div class="opction">
+                <div class="opctionText">You Tube</div>
+            </div>
+            <div class="opction">
+                <div class="opctionText">FaceBook</div>
+            </div>
+            <div class="opction">
+                <div class="opctionText">Instagram</div>
+            </div>
+            <div class="opction">
+                <div class="opctionText">Twitter</div>
+            </div>
+            <div class="opction">
+                <div class="opctionText">Linked in</div>
+            </div>
+        </div>
+    </div>
+    
+   <script>
+    const container = document.querySelector('.container')
+    const opctions = document.querySelectorAll('.opction')
+    const selectText = document.querySelector('.selectText')
+
+
+    container.addEventListener('click',() => {
+        container.classList.toggle('active')
+    } )
+
+
+    opctions.forEach((curElm) => {
+        curElm.addEventListener('click',() => {
+            let storeVal = curElm.querySelector('.opctionText').innerText;
+            selectText.innerText = storeVal
+        } )
+    } )
+
+   </script>
+</body>
+</html>
